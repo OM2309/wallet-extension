@@ -2,8 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Puzzle, Pin, HelpCircle, Twitter, MessageSquare } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function SetupCompletePage() {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-background flex flex-col px-6 py-6 text-foreground h-screen"> 
       <div className="mt-6 mb-6 mx-auto max-w-sm w-full">
@@ -95,6 +98,7 @@ export default function SetupCompletePage() {
       <div className="mt-auto max-w-sm mx-auto w-full pt-4">
         <Button
           type="button"
+          onClick={() => navigate("/wallets")}
           className="cursor-pointer w-full h-14 text-lg font-semibold rounded-2xl bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 transition-all"
         >
           Open A1

@@ -4,6 +4,7 @@ import NetworkSelection from "@/pages/NetworkSelection";
 import SetupPassword from "@/pages/SetupPassword";
 import WalletSetupLoading from "@/pages/WalletSetupLoading";
 import SetupComplete from "@/pages/SetupComplete";
+import Wallets from "@/pages/Wallets";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route
           path="/setup-complete"
           element={<SetupComplete />}
+        />
+        <Route
+          path="/wallets"
+          element={<Wallets />}
         />
       </Routes>
     </div>
