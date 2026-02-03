@@ -98,7 +98,7 @@ export default function SetupCompletePage() {
       <div className="mt-auto max-w-sm mx-auto w-full pt-4">
         <Button
           type="button"
-          onClick={() => navigate("/wallets")}
+          onClick={() => navigate("/dashboard")}
           className="cursor-pointer w-full h-14 text-lg font-semibold rounded-2xl bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 transition-all"
         >
           Open A1

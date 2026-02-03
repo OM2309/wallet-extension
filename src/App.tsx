@@ -5,6 +5,7 @@ import SetupPassword from "@/pages/SetupPassword";
 import WalletSetupLoading from "@/pages/WalletSetupLoading";
 import SetupComplete from "@/pages/SetupComplete";
 import Wallets from "@/pages/Wallets";
+import WalletDashboard from "./pages/WalletDashboard";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
         <Route
           path="/wallets"
           element={<Wallets />}
+        />
+        <Route
+          path="/"
+          element={<WalletDashboard />}
         />
       </Routes>
     </div>

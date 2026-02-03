@@ -10,6 +10,7 @@ import { Eye, EyeOff } from "lucide-react";
 import { passwordSchema, type PasswordForm } from "@/types";
 import { useNavigate } from "react-router-dom";
 
+
 export default function SetupPasswordPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
@@ -28,9 +29,13 @@ export default function SetupPasswordPage() {
     },
   });
 
-  const onSubmit = (data: PasswordForm) => {
-    console.log("Password set:", data.password);
-    navigate("/wallet-setup-loading");
+  const onSubmit = async (data: PasswordForm) => {
+    try {
+      console.log(data);
+      navigate("/wallet-setup-loading");
+    } catch (err) {
+      console.error("Failed to create and save vault:", err);
+    }
   };
 
 
