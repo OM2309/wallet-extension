@@ -5,7 +5,6 @@ import {
   SiBnbchain  
 } from 'react-icons/si';
 
-
 const popularNetworks = [
   { id: 'solana',   name: 'Solana',   icon: <SiSolana className="text-[#00FFA3] text-4xl" /> },   
   { id: 'sui',      name: 'Sui',      icon: <SiSui className="text-[#4DA2FF] text-4xl" /> },      
